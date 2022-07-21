@@ -11,6 +11,102 @@
     <title> eiliya web </title>
 </head>
 <body>
+    <!--make top header-->
+    <header class="top-header d-flex col-12 px-0">
+        <!--brand-->
+        <section class="d-flex col-4 col-xl-2 col-lg-2 col-md-2 col-sm-2 h-100 w-100 align-items-center justify-content-center mx-0" title="Acme">
+            <section>
+                <img src="images/Symbol@1x.png" alt="brand" title="Acme"/>
+            </section>
+            <section>
+                Acme
+            </section>
+        </section>
+        <!--ens brand-->
+        <!--make social-->
+        <section class="container-fluid col-5 col-xl-8 col-lg-8 col-md-8 col-sm-8 mx-0 p-0">
+            <ul class="d-flex list-unstyled col-12 h-100 align-items-center justify-content-center">
+                <li>
+                    <a href="#">
+                        <img src="images/instagram_icn@1x%20(1).png" alt="instagram icon" title="instagram"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/twitter_icn@1x.png" alt="twitter icon" title="twitter"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/facebook_icn@1x.png" alt="facebook icon" title="facebook"/>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!--end make social-->
+        <!--make search-->
+        <section class="container-fluid col-4 col-xl-2 col-lg-2 col-md-2 col-sm-2 h-100 p-0 m-0">
+            <section class="d-flex h-100 justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+                <!-- Button trigger modal for search -->
+                <button type="button" class="search btn" data-toggle="modal" data-target="#exampleModal">
+                    <img src="images/search_icn@1x.png" alt="search icon" title="search box">
+                </button>
+
+                <!-- Modal -->
+                <section class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <section class="modal-dialog" role="document">
+                        <section class="modal-content">
+                            <section class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel"><strong>search box</strong></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </section>
+                            <section class="modal-body">
+                                <form class="form-inline w-100 p-0">
+                                    <input class="form-control mr-sm-2 w-100 mb-3" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-success my-2 my-sm-0 w-50 mx-auto" type="submit">Search</button>
+                                </form>
+                            </section>
+                            <section class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <!-- Button trigger modal for search -->
+                <!-- Button trigger modal for shopping -->
+                <button type="button" class="cart btn" data-toggle="modal" data-target="#exampleModalLong">
+                    <img src="images/cart_icn@1x.png" alt="shop icon" title="shopping">
+                </button>
+
+                <!-- Modal -->
+                <section class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <section class="modal-dialog" role="document">
+                        <section class="modal-content">
+                            <section class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </section>
+                            <section class="modal-body">
+                                ...
+                            </section>
+                            <section class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <!-- Button trigger modal for shopping -->
+            </section>
+        </section>
+        <!--end make search-->
+    </header>
+    <!--end make top header-->
+
 
 <!--script-->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
