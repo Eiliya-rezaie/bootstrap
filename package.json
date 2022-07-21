@@ -1,0 +1,21 @@
+{
+  "name": "eiliya-rezaie-progect",
+  "version": "1.0.0",
+  "description": "with bootstrap-css-sass-jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w sass/main.scss -o css/ -r"
+  },
+  "keywords": [
+    "bootstrap-meta-tags"
+  ],
+  "author": "eiliya rezaie",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "live-server": "^1.2.2",
+    "node-sass": "^7.0.1"
+  }
+}
