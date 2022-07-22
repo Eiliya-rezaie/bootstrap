@@ -57,6 +57,7 @@
     }
     //make menu
     >header:nth-of-type(2){
+      background: white;
       >nav{
         >button:nth-of-type(1){
           >strong{
@@ -88,6 +89,81 @@
       }
     }
     //end make menu
+    //make first body
+    >main:nth-of-type(1){
+      padding: 40px 80px;
+      box-sizing: border-box;
+      background: #FFF6F6;
+      >section:nth-of-type(1){
+        >section.card{
+          position: relative;
+          overflow: hidden;
+          &:hover::after{
+            right: 0;
+          }
+          &:after{
+            content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: #000;
+          opacity: 70%;
+          z-index: 0;
+          right: 100%;
+          @include tranlong;
+          }
+          >section.card-img-overlay{
+            display: flex;
+            align-items: end;
+            padding-left:50px;
+            padding-bottom:70px;
+            box-sizing:border-box;
+            >p{
+              font-size: 36px;
+              text-shadow: 4px 4px 9px black;
+              z-index: 1;
+            }
+          }
+        }
+      }
+      >section:nth-of-type(2){
+        >section:nth-of-type(1){
+          position: relative;
+          overflow: hidden;
+          &:hover::after{
+            left: 0;
+          }
+          &:hover>section:nth-of-type(1)>p:nth-of-type(1){
+            transform: scale(1.1);
+            //margin:auto 10px ;
+          }
+          &:after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #000;
+            z-index: 0;
+            left: 100%;
+            @include tranlong;
+          }
+            >section:nth-of-type(1) {
+              display: flex;
+              align-items: end;
+              > p:nth-of-type(1) {
+                font-size: 30px;
+                text-shadow: 6px 6px 10px black;
+                z-index: 1;
+                //@include tranlong;
+                //transition-delay: 900ms;
+                transition: all 600ms linear;
+              }
+            }
+        }
+
+      }
+    }
+    //end make first body
   }
 }
 //end make xl
@@ -141,8 +217,11 @@
     //make menu
     //make menu
     >header:nth-of-type(2){
-      height: 30px;
+      height: 50px;
+      background: white;
       >nav{
+        background: white;
+        height: inherit;
         >button:nth-of-type(1){
           >strong{
 
@@ -150,14 +229,17 @@
         }
         >section:nth-of-type(1){
           >ul{
+            //height: inherit;
             >li{
               margin: 0px 10px;
+              background: white !important;
               >a.nav-link{
                 color: black !important;
                 font-size: 20px;
                 font-weight:400 ;
                 padding: 10px 20px;
                 box-sizing: border-box;
+                height: 45px;
                 //background: #000;
                 @include transhort;
                 &:hover{
@@ -173,6 +255,69 @@
       }
     }
     //end make menu
+    //make first body
+    >main:nth-of-type(1){
+      padding: 30px 40px;
+      box-sizing: border-box;
+      background: #FFF6F6;
+      >section:nth-of-type(1){
+        position: relative;
+        >section.card{
+          overflow: hidden;
+          &:hover::after{
+            right: 0;
+          }
+          &:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 70%;
+            z-index: 0;
+            right: 100%;
+            @include tranlong;
+          }
+          >section.card-img-overlay{
+            display: flex;
+            align-items: end;
+            padding-left:30px;
+            padding-bottom:40px;
+            box-sizing:border-box;
+            >p{
+              font-size: 32px;
+              text-shadow: 4px 4px 9px black;
+              z-index: 1;
+            }
+          }
+        }
+      }
+      >section:nth-of-type(2){
+        >section:nth-of-type(1){
+          >section:nth-of-type(1){
+            display: flex;
+            align-items: end;
+            >p:nth-of-type(1){
+              font-size: 26px;
+              text-shadow: 6px 6px 10px black;
+            }
+          }
+        }
+        >section:nth-of-type(2){
+          >img{
+            &:hover{
+              filter: blur(30px);
+            }
+          }
+          >section{
+            >p{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    //end make first body
   }
 }
 //end make lg
