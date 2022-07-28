@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title> eiliya web </title>
 </head>
-<body style="height: 1000px">
+<body>
     <!--make top header-->
     <header class="top-header d-flex col-12 px-0">
         <!--brand-->
-        <section class="d-flex col-4 col-xl-2 col-lg-2 col-md-2 col-sm-2 h-100 w-100 align-items-center justify-content-center mx-0" title="Acme">
+        <section class="d-flex col-4 col-xl-2 col-lg-2 col-md-2 col-sm-3 h-100 w-100 align-items-center justify-content-center mx-0" title="Acme">
             <section>
                 <img src="images/Symbol@1x.png" alt="brand" title="Acme"/>
             </section>
@@ -24,7 +24,7 @@
         </section>
         <!--ens brand-->
         <!--make social-->
-        <section class="container-fluid col-5 col-xl-8 col-lg-8 col-md-8 col-sm-8 mx-0 p-0">
+        <section class="container-fluid col-5 col-xl-8 col-lg-8 col-md-8 col-sm-6 mx-0 p-0">
             <ul class="d-flex list-unstyled col-12 h-100 align-items-center justify-content-center">
                 <li>
                     <a href="#">
@@ -45,7 +45,7 @@
         </section>
         <!--end make social-->
         <!--make search-->
-        <section class="container-fluid col-4 col-xl-2 col-lg-2 col-md-2 col-sm-2 h-100 p-0 m-0">
+        <section class="container-fluid col-4 col-xl-2 col-lg-2 col-md-2 col-sm-3 h-100 p-0 m-0">
             <section class="d-flex h-100 justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
                 <!-- Button trigger modal for search -->
                 <button type="button" class="search btn" data-toggle="modal" data-target="#exampleModal">
@@ -121,10 +121,10 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Shop
                         </a>
-                        <section class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                        <section class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-white" href="#">Action</a>
+                            <a class="dropdown-item text-white" href="#">Another action</a>
+                            <a class="dropdown-item text-white" href="#">Something else here</a>
                         </section>
                     </li>
                     <li class="nav-item bg-light" title="blog">
@@ -139,25 +139,25 @@
     </header>
     <!--end make menu-->
     <!--make first body-->
-    <main class="container-fluid d-xl-flex d-lg-flex flex-xl-row flex-lg-row">
-        <section class="col-xl-8 col-lg-8">
+    <main class="container-fluid d-xl-flex d-lg-flex d-md-flex d-sm-flex d-flex flex-xl-row flex-lg-row flex-md-row flex-sm-column flex-column">
+        <section class="col-xl-8 col-lg-8 col-md-8 col-sm-12 ">
             <section class="card bg-dark text-white border-0">
                 <img src="images/img-1.jpg" title="mod of year" alt="model" class="img-fluid"/>
                 <section class="card-img-overlay">
-                    <p class="card-text col-xl-6 col-lg-10">How I lost The Secret Of
+                    <p class="card-text col-xl-10 col-lg-10 col-md-12">How I lost The Secret Of
                     Dazzling Success For 20 Years
                     </p>
                 </section>
             </section>
         </section>
-        <section class="d-flex flex-column col-xl-4 col-lg-4">
+        <section class="d-flex flex-column col-xl-4 col-lg-4 col-md-4 col-sm-12 flex-xl-column flex-lg-column flex-md-column flex-sm-row">
             <section class="card bg-dark text-white border-0">
                 <img src="images/img-2.jpg" title="about travel" alt="mod" class="img-fluid"/>
                 <section class="card-img-overlay">
-                    <p class="card-text col-xl-10 col-lg-12">Mother Earth Host Our Travels</p>
+                    <p class="card-text col-xl-10 col-lg-12 col-md-12">Mother Earth Host Our Travels</p>
                 </section>
             </section>
-            <section class="card bg-dark text-white border-0 mt-xl-4 mt-lg-4">
+            <section class="card bg-dark text-white border-0 mt-xl-4 mt-lg-4 mt-md-4">
                 <img src="images/img-3.jpg" title="about travel" alt="mod" class="img-fluid"/>
                 <section class="card-img-overlay">
                     <h5 class="card-title">Card title</h5>
@@ -168,6 +168,16 @@
         </section>
     </main>
     <!--end make first body-->
+    <!-- make second body -->
+    <main class="col-12">
+        <section class="container-fluid m-0 p-5 col-12">
+            <section class="d-flex justify-content-center">
+                <section class="col-xl-3 p-5 bg-light mr-xl-3"></section>
+                <section class="col-xl-8 p-5 bg-light ml-xl-2"></section>
+            </section>
+        </section>
+    </main>
+    <!-- end make second body -->
 
 
 <!--script-->
